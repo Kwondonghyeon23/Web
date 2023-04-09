@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <h3>레스토랑 예약하기</h3>
+    <form method="get" action="form_app.js">
+        <fieldset>
+            <legend>예약자 정보</legend>
+            예약자 : <input type="text" name="aname"/> <br>
+            연락처 : <input type="tel" name="atel" placeholder="000-0000-0000"> <br>
+            예약인원 : <select name="job" size="1">
+                <option>1명</option>
+                <option>2명</option>
+                <option>3명</option>
+                <option>4명</option>
+            </select>  
+        </fieldset>
+        <fieldset>
+            <legend>일자 선택 및 시간 선택</legend>
+            <input type="date" name="date1" min="2023-04-10">
+            <input type="time" name="time1" min="09:00" max="18:00">
+        </fieldset> <br>
+    </form>
+    <input type="submit" value="확인"/>
+    <input type="reset" value="취소"/> 
+</html>
